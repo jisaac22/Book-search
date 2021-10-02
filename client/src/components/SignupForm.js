@@ -24,7 +24,7 @@ const SignupForm = () => {
 // check if form has everything (as per react-bootstrap docs)
    try {
      const { data } = await addUser({
-       variable: {...userFormData}
+       variables: {...userFormData}
      });
 
      Auth.login(data.addUser.token)
